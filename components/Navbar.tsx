@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import { UserButton } from "@clerk/nextjs";
 import styles from "../components/navbar.module.css";
 
 function Navbar() {
@@ -17,6 +18,10 @@ function Navbar() {
           <Link href="/contact">
             <li>Contact</li>
           </Link>
+
+          <li>
+            <UserButton />
+          </li>
         </ul>
       </nav>
     </header>
